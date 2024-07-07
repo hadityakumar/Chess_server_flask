@@ -3,3 +3,4 @@ numpy==1.26.4
 pipenv==2024.0.1
 stockfish==3.28.0
 tensorflow==2.16.2
+gunicorn
