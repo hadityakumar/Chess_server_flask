@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: chess_server_flask
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "./start.sh"
