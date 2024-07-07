@@ -2,7 +2,7 @@ import sys
 from stockfish import Stockfish
 
 def get_best_move(fen):
-    stockfish = Stockfish("./stockfish-ubuntu-x86-64")
+    stockfish = Stockfish("./stockfish-windows-x86-64")
     stockfish.set_fen_position(fen)
     best_move = stockfish.get_best_move()
     return str(best_move)
