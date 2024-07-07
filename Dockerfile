@@ -15,13 +15,17 @@ COPY . .
 
 # Install any additional system packages you need
 # For example, if you need additional binaries or tools, you can install them here
+# Install system dependencies and Stockfish
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends \
-    stockfish && \
+    apt-get install -y stockfish && \
     rm -rf /var/lib/apt/lists/*
+
 
 # Make port 5000 available to the world outside this container
 EXPOSE 5000
 
 # Run app.py when the container launches
 CMD ["python", "app.py"]
+
+
+
