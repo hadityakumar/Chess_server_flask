@@ -1,0 +1,5 @@
+{
+    "bin": {
+        "execute": "stockfish-windows-x86-64.exe"
+    }
+}
